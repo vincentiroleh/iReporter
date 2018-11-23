@@ -5,45 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iReporter -Home Page</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="16x16" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <div class="main">
-        <!-- First section of the homepage -->
-        <div class="HomePageDescriptionLeft">
-            <div class="HomePageNavbar">
-                <span class="HomePageIcon"> </span>
-                <a class="StaticLoginHomePage" href=""> Log in</a>
-            </div>
-            <h1 class="HomePageSignupTitle">Let's fight "corruption" and curb this menace right now</h1>
-            
-            <div class="HomePageSingupForm">
-                <h2 class="HomePageSignupSubTitle">Join iReporter today.</h2>
-                <div class="HomePageSignupButtons">
-                    <a class="SignupButton" href="#">Sign Up</a>
-                    <a href="#" class="LoginButton"> Log in</a>
-                </div>
+<body onload="notifier()">
+    <div class="container">
+        <!-- Box1 section -->
+        <div class="Box1">
+            <div class="communicationList">
+                <ul>
+                    <li>
+                        <img class="svg" src="./assets/img/megaphone.svg" alt="">
+                        <h3>Report Corruption</h3>
+                    </li>
+                    <li>
+                        <img class="svg" src="./assets/img/whistle.svg" alt="">
+                        <h3>Blow A Whistle</h3>
+                    </li>
+                    <li>
+                        <img class="svg" src="./assets/img/team.svg" alt="">
+                        <h3>Hear what people are talking about</h3>
+                    </li>
+                </ul>
+            </div>            
+        </div>
 
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        <!-- Box2 section -->
+        <div class="Box2">
+            <div class="box1">
+                <div><img class="logo" src="./assets/img/icon.svg" alt=""></div>
+                <div><a href="#" class="BtnLogin">Log in</a></div>
             </div>
+
+            <div class="box2">
+                <h1>Fighting Corruption <br>Together</h1>
+            </div>
+
+            <div class="box3">
+                <h4>Join iReporter today</h4>
+            </div>
+
+            <div class="box4">
+                <a href="#" class="ButtonSignup">Sign Up</a>
+                <a href="#" class="ButtonLogin">Log In</a>
+            </div>
+
         </div>
-        
-        <!-- Second section of the homepage -->
-        <div class="HomePageDescriptionRight">
-            <div>
-                <span>Report corruption</span>
-            </div>
-            <div>
-                <span>Blow a whistle</span>
-            </div>
-            <div>
-                <span>Hear what people are talking about</span>
-            </div>
-            
-        </div>
-        
-        <footer>
-            &copy; 2018 iReporter
-        </footer>
+
     </div>
+    <footer>
+        &copy; 2018 iReporter
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

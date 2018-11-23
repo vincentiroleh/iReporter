@@ -1,17 +1,2 @@
 @import 'reset.css';
-
-
-/* general styles */
-body{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0; 
-    font-size: 14px; 
-    line-height: 20px; 
-    text-align: start; 
-    letter-spacing: normal;
-}
-
-a{
-    text-decoration: none;
-}
-
+@import 'homepage.css';
