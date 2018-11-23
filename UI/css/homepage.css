@@ -137,4 +137,8 @@ footer{
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px; line-height: normal; letter-spacing: normal;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
