@@ -30,7 +30,7 @@
     padding: 10px; overflow: auto;
 }
 .communicationList li:hover{
-    cursor: pointer;  
+    cursor: help;  
 }
 .communicationList ul h3{
     font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
@@ -132,6 +132,7 @@
 
 footer{
     text-align: center;
+    margin: 0;
     padding: 10px;
     background: #ffffff;
     color: #000000;
