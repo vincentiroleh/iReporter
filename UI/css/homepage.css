@@ -1,4 +1,4 @@
-.container{
+.homePage-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -130,7 +130,7 @@
     background-color: #E9F3FE;
 }
 
-footer{
+.homePage-footer{
     text-align: center;
     padding: 10px;
     background: #ffffff;
