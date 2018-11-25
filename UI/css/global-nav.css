@@ -1,0 +1,35 @@
+.global-nav{
+    background: #FFFFFF;
+    padding-top: 5px;
+    margin-top: -1%;
+    clear: both;
+}
+.global-nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-left:15%;
+    line-height: 13px;
+    font-size: 13px;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.global-nav-about a{
+    text-decoration: none;
+    color: #66757f;
+    font-weight: bold;
+}
+.global-nav-about{
+    margin-top: 8px;
+}
+.global-nav-about a:hover{
+    color: #1c94e0;
+    cursor: progress;
+
+}
+.global-nav-logo{
+    max-width:30px;
+}
