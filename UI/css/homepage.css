@@ -69,42 +69,6 @@
     font-size: 18px; line-height: 24px;  
 }
 
-.Box2 .ButtonSignup, .ButtonLogin{
-    border-radius: 100px;
-    box-shadow: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 20px;
-    padding: 6px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 23px;
-    padding: 6px 16px;
-    width: 60%;
-}
-.Box2 .ButtonSignup{
-    background: #1da1f2;
-    border-color: #1da1f2;
-    color: #fff;
-    display: block;
-    margin-bottom: 16px;    
-}
-.Box2 .ButtonSignup:hover{
-    background-color: #344FC4;
-}
-.Box2 .ButtonLogin{
-    background-color: #fff;
-    border: 1px solid #1da1f2;
-    color: #1da1f2;
-    display: block;
-    margin-bottom: 16px;
-}
-.Box2 .ButtonLogin:hover{
-    background-color: #E9F3FE;
-}
 .Box2 .box1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,20 +78,6 @@
     display: inline-block;
     max-width:50px;
     line-height: 16px;
-}
-.BtnLogin{
-    display: inline-block;
-    background-color: #fff;
-    border: 1px solid #1da1f2;
-    border-radius: 100px;
-    color: #1da1f2;
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 10px 17px;
-}
-.BtnLogin:hover{
-    background-color: #E9F3FE;
 }
 
 .homePage-footer{
