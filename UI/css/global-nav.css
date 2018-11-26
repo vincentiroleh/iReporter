@@ -3,6 +3,9 @@
     padding-top: 5px;
     margin-top: -1%;
     clear: both;
+    border-bottom: #1c94e0 groove 1px;
+    margin-bottom: 15px;
+    padding-bottom: -1px;
 }
 .global-nav ul {
     list-style: none;
@@ -17,19 +20,22 @@
     padding-top: 3px;
     padding-bottom: 3px;
 }
-.global-nav-about a{
+.global-nav-about a,.global-nav-profileIcon a{
     text-decoration: none;
     color: #66757f;
     font-weight: bold;
 }
-.global-nav-about{
+.global-nav-about,.global-nav-profileIcon{
     margin-top: 8px;
 }
-.global-nav-about a:hover{
+.global-nav-about a:hover,.global-nav-profileIcon a:hover{
     color: #1c94e0;
     cursor: progress;
 
 }
-.global-nav-logo{
+.global-nav-logo,.global-nav-profileIcon{
     max-width:30px;
+}
+.global-nav-profileIcon {
+    margin: 0; padding: 0;
 }
