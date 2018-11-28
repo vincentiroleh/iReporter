@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="16x16">
 </head>
-<body class="user-page">
+<body class="reports-page">
+
     <!-- The global nav section -->
     <div class="global-nav">
         <ul>
@@ -20,10 +21,95 @@
                     <img src="./assets/img/user.svg" alt="users icon">
                 </a>
             </li>
-            <li>
-                
+            <li class="global-nav-help">
+                <a href="#">Help</a>                
+            </li>
+            <li class="global-nav-signout">
+                <a href="../index.html">Sign Out</a>
             </li>
         </ul>
     </div>
+
+        <!-- The sidebar section -->
+    <div class="sidebar-nav">
+        <ul class="report-sidebar">
+            <li> <a href="./create.html">Add Report</a></li>
+            <li><a href="#" class="active">All Reports</a></li>
+            <li><a href="#">Resolved Reports</a></li>
+            <li><a href="#">Draft Reports</a></li>
+            <li><a href="#">Rejected Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="report-section">
+        <div class="red-flags">
+            <h1>Red Flags</h1>
+            <ul>
+               <li>
+                   <p>
+                       <h4>Robbery in Hotel de gea</h4>
+                       The Hotel de ge is currently under attack...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Ikeja »<small title="time"> 11:45</small></button>
+               </li>                   
+               <li>
+                   <p>
+                       <h4>Police Attack</h4>
+                       Some police officers in stand 5 old road just...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Aguta »<small title="time"> 1:20</small></button>
+               </li>                   
+               <li>
+                   <p>
+                       <h4>Bribe in Abia State polytechnic</h4>
+                       Computer Structure lecturer of the Department of CET have asked ...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Iketu »<small title="time"> 6:50</small></button>
+               </li>                   
+               <li>
+                   <p>
+                       <h4>Rape Case</h4>
+                       My neighbor's daughter Adaize was...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Ikorodu »<small title="time"> 1:48</small></button>
+               </li>                                 
+            </ul>
+        </div>
+
+        <div class="intervention">
+            <h1> All Interventions</h1>
+            <ul>
+               <li>
+                   <p>
+                       <h4>Bad Road</h4>
+                       The road that leads to Agric Ikorodu from AP junction is in bad shape...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Ikorodu »<small title="time"> 11:45</small></button>
+               </li>                                  
+               <li>
+                   <p>
+                       <h4>No Power Supply</h4>
+                       It's already a month we haven't seen light due to transform damage...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Ikeja »<small title="time"> 1:20</small></button>
+               </li>                                  
+               <li>
+                   <p>
+                       <h4>Causality</h4>
+                       The dead body of accident victims that occurred last week is yet to be removed...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Iketu »<small title="time"> 6:50</small></button></button>
+               </li>                                  
+               <li>
+                   <p>
+                       <h4>Lack of Quality Education</h4>
+                       Ijide Grammar School's building is lacking quality facilities...
+                   </p>
+                   <button class="deleteBtn" title="Delete Report">Delete</button> <button class="editBtn" title="Edit Report">Edit</button> <button title="Location" class="locationBtn">Ijide »<small title="time"> 1:48</small></button>
+               </li>                                  
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
