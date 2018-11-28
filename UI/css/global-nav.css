@@ -1,16 +1,28 @@
 .global-nav{
     background: #FFFFFF;
-    padding-top: 5px;
+    padding-top: 3px;
     margin-top: -1%;
-    clear: both;
     border-bottom: #1c94e0 groove 1px;
     margin-bottom: 15px;
     padding-bottom: -1px;
+    width: 100%;
+
+}
+/* report page nav */
+.reports-page .global-nav{
+    background: #FFFFFF;
+    padding-top: 0px;
+    /* margin-top: -6%; */
+    border-bottom: #1c94e0 groove 2px;
+    width: 100%;
+    display: block;
+    position: fixed;
+
 }
 .global-nav ul {
     list-style: none;
     display: grid;
-    grid-template-columns: 50px 50px;
+    grid-template-columns: 70px 70px 70px 70px;
     grid-template-rows: auto;
     grid-gap: 20px;
     margin-left:15%;
@@ -20,22 +32,36 @@
     padding-top: 3px;
     padding-bottom: 3px;
 }
-.global-nav-about a,.global-nav-profileIcon a{
+.global-nav-about a,.global-nav-profileIcon a,.global-nav-help a {
     text-decoration: none;
     color: #66757f;
     font-weight: bold;
 }
-.global-nav-about,.global-nav-profileIcon{
+.global-nav-about,.global-nav-profileIcon,.global-nav-help,.global-nav-signout{
     margin-top: 8px;
 }
-.global-nav-about a:hover,.global-nav-profileIcon a:hover{
+.global-nav-about a:hover,.global-nav-profileIcon a:hover,.global-nav-help a:hover{
     color: #1c94e0;
-    cursor: progress;
+    cursor: pointer;
 
 }
-.global-nav-logo,.global-nav-profileIcon{
+.global-nav-logo,.global-nav-profileIcon,.global-nav-help{
     max-width:30px;
 }
 .global-nav-profileIcon {
     margin: 0; padding: 0;
+}
+.global-nav-signout a {
+    border: 1px solid #1da1f2;
+    background: #1da1f2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px 4px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 100px;
+}
+.global-nav-signout a:hover {
+    background: #344FC4;
 }
