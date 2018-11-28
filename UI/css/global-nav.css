@@ -9,7 +9,7 @@
 
 }
 /* report page nav */
-.reports-page .global-nav{
+.reports-page .global-nav, .resolved-page .global-nav{
     background: #FFFFFF;
     padding-top: 0px;
     /* margin-top: -6%; */
