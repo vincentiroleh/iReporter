@@ -1,5 +1,5 @@
 /* General styles */
-.resolved-page {
+.draft-page {
     background: #ffffff;
 }
 
@@ -7,7 +7,7 @@
 .sidebar-nav {
     margin-top: -50px;
 }
-.resolved-sidebar {
+.draft-sidebar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,26 +19,26 @@
     margin-top: 70px;
 }
 
-.resolved-sidebar li a {
+.draft-sidebar li a {
     display: block;
     color: #ffffff;
     padding: 8px 16px;
     text-decoration: none;
     margin: 5px 0 0 0;
 }
-.resolved-sidebar li a.active {
+.draft-sidebar li a.active {
     background-color: rgb(10, 90, 13);
     border-radius: 50px 0 0 0;
     color: white;
 }
-.resolved-sidebar li a:hover:not(.active) {
+.draft-sidebar li a:hover:not(.active) {
     background-color: rgb(153, 143, 143);
     color: white;
 }
 
 
-/* resolved section ----------------------------------------------------------------------------------------*/
-.resolved-page .resolved-section{
+/* draft section ----------------------------------------------------------------------------------------*/
+.draft-page .draft-section{
     margin-left: 17%;
     padding: 0 16px;
     height: auto;
@@ -47,7 +47,7 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;  
 }
-.resolved-page .resolved-section h1{
+.draft-page .draft-section h1{
     margin: 0;
     padding: 10px;
     color: #ffffff;
@@ -56,19 +56,19 @@
     background: #535358;
 }
 /* red flag and intervention section -------------------------------------------------------------------------------------*/
-.resolved-section .red-flags {
+.draft-section .red-flags {
     background:rgb(61, 64, 71);
     margin: 70px 0 0 0;
     resize: both;
     overflow: auto;
 }
-.resolved-section .intervention {
+.draft-section .intervention {
     background: rgb(61, 64, 71);
     margin: 70px 0 0 5px;
     resize: both;
     overflow: auto;
 }
-.resolved-section .red-flags ul li {
+.draft-section .red-flags ul li {
     list-style: none;
     background: rgb(217, 226, 241);
     margin: 10px 5px 10px -35px;
@@ -79,7 +79,7 @@
     resize: both;
     overflow: auto;
 }
-.resolved-section .intervention ul li {
+.draft-section .intervention ul li {
     list-style: none;
     background: #EAF8C0;
     margin: 10px 5px 10px -35px;
@@ -90,7 +90,7 @@
     resize: both;
     overflow: auto;
 }
-.resolved-section .red-flags .deleteBtn,.resolved-section .intervention .deleteBtn {
+.draft-section .red-flags .deleteBtn,.draft-section .intervention .deleteBtn {
     background: rgb(180, 54, 84);
     color: #ffffff;
     font-weight: bold;
@@ -99,7 +99,7 @@
     border-radius: 3px;
     cursor: not-allowed;
 }
-.resolved-section .red-flags .editBtn,.resolved-section .intervention .editBtn {
+.draft-section .red-flags .editBtn,.draft-section .intervention .editBtn {
     background: rgb(9, 161, 9);
     color: #ffffff;
     font-weight: bold;
@@ -108,7 +108,7 @@
     border-radius: 3px;
     cursor: not-allowed;
 }
-.resolved-section .red-flags .locationBtn,.resolved-section .intervention .locationBtn {
+.draft-section .red-flags .locationBtn,.draft-section .intervention .locationBtn {
     border: none;
     background: none;
     outline: none;
