@@ -6,11 +6,3 @@
 @import 'buttons.css';
 @import 'reports.css';
 @import 'resolved.css';
-@import 'draft.css';
-
-/* statistics of reports, resolved, in draft, and rejected reports */
-.statNum {
-    color: rgb(238, 90, 114);
-    float: right;
-    text-align: center;
-}
