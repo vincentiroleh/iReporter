@@ -9,7 +9,7 @@
 
 }
 /* report, resolved, indraft, and rejected page nav */
-.reports-page .global-nav, .resolved-page .global-nav, .draft-page .global-nav{
+.reports-page .global-nav, .resolved-page .global-nav, .draft-page .global-nav, .rejected-page .global-nav{
     background: #FFFFFF;
     padding-top: 0px;
     /* margin-top: -6%; */
