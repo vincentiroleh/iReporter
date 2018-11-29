@@ -115,3 +115,10 @@
     font-size: 11px;
     float: right;
 }
+
+
+.statNum {
+    color: rgb(238, 90, 114);
+    float: right;
+    text-align: center;
+}
