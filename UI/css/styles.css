@@ -8,6 +8,7 @@
 @import 'resolved.css';
 @import 'draft.css';
 @import 'rejected.css';
+@import 'admin.css';
 
 /* statistics of reports, resolved, in draft, and rejected reports */
 .statNum {
