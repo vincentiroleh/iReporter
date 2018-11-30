@@ -1,0 +1,126 @@
+.admin-login-page {
+    background: rgb(3, 20, 39);
+    color: #24292e;
+    opacity: 0.9;
+}
+.admin-login-page .admin-login-section {
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: #4298fa 3px solid;
+    border-radius: 10px;
+}
+
+.admin-login-page .admin-img {
+    text-align: center!important;
+    width: 100%!important;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: block;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.admin-login-page .admin-img img {
+    max-width: 70px;
+}
+.admin-login-page .admin-header *{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    margin-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+    box-sizing: border-box;
+    display: block;
+    color: #333;
+    text-align: center;
+    text-shadow: none;
+}
+.admin-login-page .form-section {
+    border-radius: 5px;
+    border-top: 1px solid #d8dee2;
+    background-color: #fff;
+    border: 1px solid #d8dee2;
+    font-size: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    padding-right: 16px!important;
+    padding-left: 16px!important;
+    
+}
+.admin-login-page .form-section * {
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+.admin-login-page .form-header {
+    background-color: initial;
+    border: 0;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.admin-login-page input {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+
+.admin-login-page .loginBtn:focus, .admin-login-page .passwordBtn:focus  {
+    background-color: #fff;
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    color: #24292e;
+    line-height: 20px;
+    min-height: 34px;
+    padding: 6px 8px;
+    outline-offset: -2px
+}
+
+.admin-login-page label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.admin-login-page .label-link {
+    float: right;
+    font-size: 12px;
+    color: #0366d6;
+    text-decoration: none;
+    background-color: initial;
+    cursor: pointer;
+}
+.admin-login-page .submitBtn {
+    margin-top: 20px;
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+    color: #fff;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
