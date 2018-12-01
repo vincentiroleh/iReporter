@@ -88,3 +88,19 @@
     background-color: #344FC4;
     color: #fff;
 }
+
+
+
+/* Admin Dashboard status button */
+.resolvedBtn {
+    background-color: #28a745;
+    color: #ffffff;
+}
+.pendingBtn {
+    background-color: #7266ba;
+    color: #ffffff;
+}
+.rejectedBtn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
