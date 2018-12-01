@@ -9,6 +9,8 @@
 @import 'draft.css';
 @import 'rejected.css';
 @import 'admin.css';
+@import 'dashboard.css';
+@import 'admin-sidebar.css';
 
 /* statistics of reports, resolved, in draft, and rejected reports */
 .statNum {
