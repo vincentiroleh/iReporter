@@ -7,8 +7,254 @@
     <title>Admin Dashboard -iReporter</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="16x16" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 </head>
 <body class="admin-dashboard-page">
-    <div></div>    
+   <div class="grid">
+        <!-- admin sidebar section -->
+        <div class="admin-sidebar">
+            <div class="admin-canvas">
+                <h1>ADMIN</h1>
+                <img class ="admin-avatar" src="./assets/img/admin-avatar.svg" alt="admin avatar">
+                <span class="admin-name">Iroleh</span>
+                <a href="#" title="Profile Settings"><img class="setting" src="./assets/img/setting.png" alt=""></a>
+                <a href="../admin.html" title="Sign out"><img class="poweroff" src="./assets/img/power.svg" alt=""></a>
+            </div>
+
+            <div class="nav-canvas">
+                <h4></h4>
+                <ul>
+                    <li><a href="#allReports">All Reports</a></li>
+                    <li><a href="#redflags">Red Flags</a></li>
+                    <li><a href="#interventions">Interventions</a></li>
+                </ul>
+            </div>
+        </div>    
+    
+        <!-- dashboard container section -->
+        <div class="dashboard-container">
+            <div class="header">
+                <h1>Dashboard</h1>        
+                <input type="search" name="search" placeholder="Search.."> 
+                <img title="Messages" src="./assets/img/msgIcon.svg" class="msgIcon" alt="Message Icon">
+                <img title="Notifications" class="notificationIcon" src="./assets/img/notificationIcon.svg" alt="notifications">
+            </div>
+
+            <div class="statNums">
+                <div class="total-reports"> 
+                    <h1>Total Reports</h1>
+                    <span>80</span>
+                </div>
+                <div class="total-redflags"> 
+                    <h1>Total Red Flags</h1>
+                    <span>40</span>
+                </div>
+                <div class="total-intervention">
+                     <h1>Total Interventions</h1>
+                     <span>40</span>
+                </div>
+            </div>
+
+            <div class="display-container">
+                <h4 id="allReports">Latest Reports</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Report</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rape Victim of her ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td>Accident at Ikorodu, along  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Intervention</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Intervention</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="redflags">Red Flags</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Report</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rape Victim of her ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td>Accident at Ikorodu, along  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Red Flag</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="interventions">Interventions</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Report</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rape Victim of her ....</td>
+                            <td>01/01/2018</td>
+                            <td>Interventions</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td>Accident at Ikorodu, along  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Interventions</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Interventions</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4</td>
+                            <td>Police Attack some police officers in  ....</td>
+                            <td>01/01/2018</td>
+                            <td>Interventions</td>
+                            <td><button class="resolvedBtn">Resolved</button><button class="pendingBtn">Work in progress</button><button class="rejectedBtn">Reject</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>    
+    
+        <!-- users sidebar section -->
+        <div class="users-sidebar">
+            <h4>Users</h4>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person1.svg" alt="">
+                <span class="userName">Emeka</span>  
+                <span class="userStat"> » 9</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person2.svg" alt="">
+                <span class="userName">Shulamite</span>  
+                <span class="userStat"> » 4</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person3.svg" alt="">
+                <span class="userName">Kevin</span>  
+                <span class="userStat"> » 7</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person4.svg" alt="">
+                <span class="userName">Champion</span>  
+                <span class="userStat"> » 2</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person1.svg" alt="">
+                <span class="userName">Trust</span>  
+                <span class="userStat"> » 9</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person2.svg" alt="">
+                <span class="userName">Anita</span>  
+                <span class="userStat"> » 4</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person2.svg" alt="">
+                <span class="userName">Paradise</span>  
+                <span class="userStat"> » 5</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person3.svg" alt="">
+                <span class="userName">Vincent</span>  
+                <span class="userStat"> » 7</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person4.svg" alt="">
+                <span class="userName">Zion</span>  
+                <span class="userStat"> » 2</span>
+            </div>
+            <div class="userDetails">
+                <img class="userImg" src="./assets/img/person4.svg" alt="">
+                <span class="userName">Hensel</span>  
+                <span class="userStat"> » 6</span>
+            </div>
+        </div>    
+
+   </div>
 </body>
 </html>
