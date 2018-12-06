@@ -42,6 +42,54 @@ app.get('/api/v1/redflags/:id', (req, res) => {
     });
 });
 
+// <-----------------------For editing a specific redflag record -------------------------------------------------------------------------------------------------------------->
+app.put('/api/v1/redflags/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    let redflagFound;
+    let itemIndex;
+    
+    db.map((redflag, index) => {
+      if (redflag.id === id) {
+        redflagFound = redflag;
+        itemIndex = index;
+      }
+    });
+  
+    if (!redflagFound) {
+      return res.status(404).send({
+        success: 'false',
+        message: 'redflag not found',
+      });
+    }
+  
+    if (!req.body.title) {
+      return res.status(400).send({
+        success: 'false',
+        message: 'title is required',
+      });
+    } else if (!req.body.details) {
+      return res.status(400).send({
+        success: 'false',
+        message: 'details is required',
+      });
+    }
+  
+    const updatedRedflag = {
+      id: redflagFound.id,
+      title: req.body.title || redflagFound.title,
+      details: req.body.details || redflagFound.details,
+    };
+  
+    db.splice(itemIndex, 1, updatedRedflag);
+  
+    return res.status(201).send({
+      success: 'true',
+      message: 'redflag added successfully',
+      updatedRedflag,
+    });
+});
+
+
 // server 
 const PORT = 3000;
 app.listen(PORT, () => {
