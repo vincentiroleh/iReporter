@@ -24,6 +24,11 @@ app.post('/api/v1/redflags', (req, res) => {
     });
 });
 
+// <-----------------------For getting all redflag record -------------------------------------------------------------------------------------------------------------->
+
+app.get('/api/v1/redflags', (req, res) => {
+    res.status(200).send(db);
+});
 
 
 // server 
