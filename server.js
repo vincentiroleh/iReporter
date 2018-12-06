@@ -18,27 +18,32 @@ app.post('/api/v1/redflags', (req, res) => {
     }
     db.push(redflag);
     return res.status(201).send({
-        sucess: 'true',
-        message: 'redflag added successfully',
-        redflag
+        status:     201,
+        data:       redflag
     });
 });
 
 // <-----------------------For getting all redflag record -------------------------------------------------------------------------------------------------------------->
 
 app.get('/api/v1/redflags', (req, res) => {
-    res.status(200).send(db);
+    res.status(200).send({
+        status: 200,
+        data: db
+    });
 });
 
 // <-----------------------For getting a specific redflag record -------------------------------------------------------------------------------------------------------------->
 app.get('/api/v1/redflags/:id', (req, res) => {
     const id = parseInt(req.params.id);
     db.map((redflag) => {
-        if (redflag.id === id) return res.status(200).send(redflag);
+        if (redflag.id === id) return res.status(200).send({
+            status: 200,
+            data:   redflag
+        });
     }); 
     return res.status(404).send({
-        status: 'false',
-        message: "Redflag does not exist"
+        status:     404,
+        error:    "Redflag does not exist"
     });
 });
 
@@ -57,20 +62,20 @@ app.put('/api/v1/redflags/:id', (req, res) => {
   
     if (!redflagFound) {
       return res.status(404).send({
-        success: 'false',
-        message: 'redflag not found',
+        status:     404,
+        error:    'redflag not found',
       });
     }
   
     if (!req.body.title) {
       return res.status(400).send({
-        success: 'false',
-        message: 'title is required',
+        status:     400,
+        error:      'title is required',
       });
     } else if (!req.body.details) {
       return res.status(400).send({
-        success: 'false',
-        message: 'details is required',
+        status:     400,
+        data:       'details is required',
       });
     }
   
@@ -83,8 +88,8 @@ app.put('/api/v1/redflags/:id', (req, res) => {
     db.splice(itemIndex, 1, updatedRedflag);
   
     return res.status(201).send({
-      success: 'true',
-      message: 'redflag added successfully',
+      status:   201,
+      data: 'redflag added successfully',
       updatedRedflag,
     });
 });
@@ -97,15 +102,15 @@ app.delete('/api/v1/redflags/:id', (req, res) => {
         if (readflag.id === id){
             db.splice(index, 1);
             return res.status(200).send({
-                status: 'successful',
-                message: 'Redflag deleted successfully'
+                status: 200,
+                data: 'Redflag deleted successfully'
             });
         }
     });
 
     return res.status(404).send({
-        status: 'false',
-        message: 'redflag not found'
+        status:     404,
+        error:    'redflag not found'
     });
 });
 
