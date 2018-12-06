@@ -15,13 +15,14 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.7"
   },
   "scripts": {
     "start": "node_modules/.bin/nodemon server.js --exec babel-node --",
     "dev": "nodemon server.js",
-    "test": "mocha"
+    "test": "mocha ./tests --recursive"
   },
   "repository": {
     "type": "git",

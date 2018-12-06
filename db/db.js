@@ -11,4 +11,10 @@ const redflags = [
     }
 ];
 
+const User = [
+    {
+        
+    }
+]
+
 export default redflags;
