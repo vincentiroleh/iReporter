@@ -21,8 +21,7 @@
   },
   "scripts": {
     "start": "node_modules/.bin/nodemon server.js --exec babel-node --",
-    "dev": "nodemon server.js",
-    "test": "mocha ./tests --recursive"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
