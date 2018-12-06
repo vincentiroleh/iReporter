@@ -9,7 +9,20 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-
+// <-----------------------For creating a redflag record -------------------------------------------------------------------------------------------------------------->
+app.post('/api/v1/redflags', (req, res) => {
+    const redflag = {
+        id:         db.length + 1,
+        title:      req.body.title,
+        details:    req.body.details
+    }
+    db.push(redflag);
+    return res.status(201).send({
+        sucess: 'true',
+        message: 'redflag added successfully',
+        redflag
+    });
+});
 
 
 
