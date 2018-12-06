@@ -30,6 +30,17 @@ app.get('/api/v1/redflags', (req, res) => {
     res.status(200).send(db);
 });
 
+// <-----------------------For getting a specific redflag record -------------------------------------------------------------------------------------------------------------->
+app.get('/api/v1/redflags/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    db.map((redflag) => {
+        if (redflag.id === id) return res.status(200).send(redflag);
+    }); 
+    return res.status(404).send({
+        status: 'false',
+        message: "Redflag does not exist"
+    });
+});
 
 // server 
 const PORT = 3000;
