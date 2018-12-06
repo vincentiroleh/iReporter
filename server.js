@@ -25,7 +25,8 @@ app.post('/api/v1/redflags', (req, res) => {
     db.push(redflag);
     return res.status(201).send({
         status:     201,
-        data:       redflag
+        data:       redflag,
+        message:    "Created red-flag record"
     });
 });
 
