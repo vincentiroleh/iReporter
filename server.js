@@ -119,8 +119,8 @@ app.delete('/api/v1/redflags/:id', (req, res) => {
 });
 
 // server 
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log('We are live on ' + PORT);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('We are live on ' + port);
 });
 
