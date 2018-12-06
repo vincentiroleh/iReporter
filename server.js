@@ -118,8 +118,17 @@ app.delete('/api/v1/redflags/:id', (req, res) => {
     });
 });
 
+
+app.get('/api/v1/', (req, res) => {
+    res.send({
+        status: 200,
+        message: 'Welcome to iReporter APIs'
+    });
+});
+
 // server 
 const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
     console.log('We are live on ' + port);
 });
