@@ -2,7 +2,7 @@
   "name": "ireporter",
   "version": "1.0.0",
   "description": "iReporter is an App that enables any citizen to bring any form of corruption to the notice of the appropriate authorities and the general public. Users can also report on things that needs government intervention.",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
