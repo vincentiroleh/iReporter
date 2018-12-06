@@ -89,6 +89,25 @@ app.put('/api/v1/redflags/:id', (req, res) => {
     });
 });
 
+// <-----------------------For deleting a specific redflag record -------------------------------------------------------------------------------------------------------------->
+app.delete('/api/v1/redflags/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+
+    db.map((readflag, index) => {
+        if (readflag.id === id){
+            db.splice(index, 1);
+            return res.status(200).send({
+                status: 'successful',
+                message: 'Redflag deleted successfully'
+            });
+        }
+    });
+
+    return res.status(404).send({
+        status: 'false',
+        message: 'redflag not found'
+    });
+});
 
 // server 
 const PORT = 3000;
