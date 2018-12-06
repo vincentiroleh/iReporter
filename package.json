@@ -1,0 +1,36 @@
+{
+  "name": "ireporter",
+  "version": "1.0.0",
+  "description": "iReporter is an App that enables any citizen to bring any form of corruption to the notice of the appropriate authorities and the general public. Users can also report on things that needs government intervention.",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "body-parser": "^1.18.3",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/nodemon server.js --exec babel-node --",
+    "dev": "nodemon server.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentiroleh/iReporter.git"
+  },
+  "author": "Iroleh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentiroleh/iReporter/issues"
+  },
+  "homepage": "https://github.com/vincentiroleh/iReporter#readme"
+}
