@@ -1,0 +1,106 @@
+/* Home Page buttons ----------------------------------------------*/
+.BtnLogin{
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    border-radius: 100px;
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 17px;
+}
+.BtnLogin:hover{
+    background-color: #E9F3FE;
+}
+.Box2 .ButtonSignup, .ButtonLogin{
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 6px 16px;
+    width: 60%;
+}
+.Box2 .ButtonSignup{
+    background: #1da1f2;
+    border-color: #1da1f2;
+    color: #fff;
+    display: block;
+    margin-bottom: 16px;    
+}
+.Box2 .ButtonSignup:hover{
+    background-color: #344FC4;
+}
+.Box2 .ButtonLogin{
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    display: block;
+    margin-bottom: 16px;
+}
+.Box2 .ButtonLogin:hover{
+    background-color: #E9F3FE;
+}
+/* Log in and Sign up buttons ----------------------------------------------*/
+.signup-form button{
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 7px;
+}
+.login-form button{
+    background-color: #ffffff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 7px;
+}
+
+.signup-form button:hover{
+    background-color: #344FC4;
+}
+.login-form button:hover{
+    background-color: #344FC4;
+    color: #fff;
+}
+
+
+
+/* Admin Dashboard status button */
+.resolvedBtn {
+    background-color: #28a745;
+    color: #ffffff;
+}
+.pendingBtn {
+    background-color: #7266ba;
+    color: #ffffff;
+}
+.rejectedBtn {
+    background-color: #dc3545;
+    color: #ffffff;
+}

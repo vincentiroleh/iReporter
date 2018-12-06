@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an issue on iReporter</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="16x16" />
+</head>
+<body class="create-page">
+    <!-- The global nav section -->
+    <div class="global-nav">
+        <ul>
+            <li class="global-nav-logo">
+                <img src="./assets/img/icon.png" class="global-nav-logo" alt="iReporter logo">
+            </li>
+            <li class="global-nav-profileIcon">
+                <a href="#" title="Profile and settings">
+                    <img src="./assets/img/user.svg" alt="users icon">
+                </a>
+            </li>
+            <li class="global-nav-help">
+                <a href="#">Help</a>                
+            </li>
+            <li class="global-nav-signout">
+                <a href="../index.html">Sign Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- creating red-flag and intervention section -->
+    <div class="create-redflag-intervention">
+
+        <!-- red-flag section -->
+        <div class="create-redflag">
+            <div class="red-flag-editor">
+                <h1>Red Flag</h1>
+                <form action="./reports.html" class="redflag-form">
+                    <div class="titleDiv">
+                        <input type="text" name="title" placeholder="Edit Title" class="edit-title"> 
+                    </div>
+
+                    <div class="textareaDiv">
+                        <textarea name="red-flag" id="" cols="30" rows="10" placeholder="Report any form of corruption happening around you." class="textarea"></textarea>                    
+                    </div>
+                    
+                    <div class="input-canvas">
+                        <div class="file-inputDiv">
+                            <input type="file" class="file-input" title="Add photos or video" name="file-input" multiple="multiple" accept="image/gif,image/jpeg,image/jpg,image/png,video/mp4,video/x-m4v">
+                        </div>
+
+                        <div class="locationDiv">
+                            <button title="Add location" class="add-locationBtn"></button>
+                        </div>
+                        
+                        <div class="submitDiv">
+                            <input type="submit" name="submit" value="Report" class="submit-redflag" title="Post your report">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Intervention Section -->
+        <div class="create-intervention">
+            <div class="intervention-editor">
+                <h1>Intervention</h1>
+                <form action="./reports.html" class="intervention-form">
+                    <div class="titleDiv">
+                        <input type="text" name="title" placeholder="Edit Title" class="edit-title"> 
+                    </div>
+
+                    <div class="textareaDiv">
+                        <textarea name="red-flag" id="" cols="30" rows="10" placeholder=" Report on things that needs government intervention." class="textarea"></textarea>                    
+                    </div>
+                    
+                    <div class="input-canvas">
+                        <div class="file-inputDiv">
+                            <input type="file" class="file-input" title="Add photos or video" name="file-input" multiple="multiple" accept="image/gif,image/jpeg,image/jpg,image/png,video/mp4,video/x-m4v">
+                        </div>
+
+                        <div class="locationDiv">
+                            <button title="Add location" class="add-locationBtn"></button>
+                        </div>
+                        
+                        <div class="submitDiv">
+                            <input type="submit" name="submit" value="Report" class="submit-redflag" title="Post your report">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    <!-- End of creating red-flag and intervention section-->   
+    </div>
+</body>
+</html>

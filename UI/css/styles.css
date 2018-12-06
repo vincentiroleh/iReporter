@@ -1,0 +1,20 @@
+@import 'reset.css';
+@import 'homepage.css';
+@import 'global-nav.css';
+@import 'login-signup.css';
+@import 'create.css';
+@import 'buttons.css';
+@import 'reports.css';
+@import 'resolved.css';
+@import 'draft.css';
+@import 'rejected.css';
+@import 'admin.css';
+@import 'dashboard.css';
+@import 'admin-sidebar.css';
+
+/* statistics of reports, resolved, in draft, and rejected reports */
+.statNum {
+    color: rgb(238, 90, 114);
+    float: right;
+    text-align: center;
+}

@@ -1,0 +1,146 @@
+/* general page settings */
+.create-page {
+    background: #E5EBF0;
+}
+.create-redflag-intervention {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: #ffffff;
+    width: 100%;
+}
+
+/* create red-flag section */
+.create-redflag,.create-intervention {
+    margin: 20px;    
+}
+
+.red-flag-editor,.intervention-editor {
+    margin: 5px;
+    background: #fce8ed;
+    opacity: 0.8;
+}
+.create-redflag h1 {
+    margin-top: -1px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: start;
+    background: #F70048;
+    opacity: 0.9;
+}
+.create-intervention h1 {
+    margin-top: -1px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: start;
+    background: #ffaf30;
+    opacity: 0.9;
+}
+.redflag-form .edit-title,.intervention-form .edit-title {
+    width: 95%;
+    margin: 5px 10px;
+    height: 30px;
+    border: solid 1px lightblue;
+    border-radius: 3px;
+    background: #ffffff;
+}
+.redflag-form .titleDiv input::placeholder,.intervention-form .titleDiv input::placeholder{
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.redflag-form .textarea,.intervention-form .textarea {
+    width: 95%;
+    height: 55vh;
+    margin: 0 10px;
+    border-radius: 10px 10px 30px 10px;
+    border: solid 1px lightblue;
+    background: url(../assets/img/documentbg.png) no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+}
+.redflag-form .textarea:focus {
+    background: #F9DFDB;
+    outline: none;
+}
+.intervention-form .textarea:focus {
+    background: lightyellow;
+    outline: none;
+}
+
+.redflag-form .input-canvas,.intervention-form .input-canvas {
+    display: grid;
+    grid-template-columns: 70px 70px auto;
+    grid-template-rows: auto;
+    background: transparent;
+    margin: 0 10px;
+    grid-gap: 0;
+}
+.redflag-form .input-canvas .file-input::-webkit-file-upload-button,.intervention-form .input-canvas .file-input::-webkit-file-upload-button{
+    visibility: hidden;   
+    color: transparent; 
+}
+.redflag-form .input-canvas .file-input,.intervention-form .input-canvas .file-input {
+    background: url('../assets/img/imgicon.svg') no-repeat center;
+    background-size: 30px;
+    margin: 0; padding: 10px;
+    max-width: 25px;
+    cursor: pointer;
+}
+.redflag-form .input-canvas .locationDiv,.intervention-form .input-canvas .locationDiv {
+    margin-left: -25px;
+}
+.redflag-form .input-canvas .add-locationBtn,.intervention-form .input-canvas .add-locationBtn {
+    height: 37px; 
+    width: 30px;   
+    background: url('../assets/img/location.png') no-repeat;
+    background-size: 32px;
+    color: transparent;
+    border: none;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.redflag-form .input-canvas .submitDiv,.intervention-form .input-canvas .submitDiv{
+    margin-left: 70%;
+    margin-right: 0;
+}
+.redflag-form .input-canvas .submit-redflag {
+    background: #F70048;
+    border: #ffffff solid 2px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bolder;
+    padding: 7px;
+    width: 100px;
+    cursor: pointer;
+}
+.redflag-form .input-canvas .submit-redflag:hover{
+    background: rgb(189, 3, 56);
+    border: #ffffff solid 3px;
+}
+.intervention-form .input-canvas .submit-redflag {
+    background: #ffaf30;
+    border: #ffffff solid 2px;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bolder;
+    padding: 7px;
+    width: 100px;
+    cursor: pointer;
+}
+.intervention-form .input-canvas .submit-redflag:hover{
+    background:#E09F08;
+    border: #ffffff solid 3px;
+}
+
+
+
