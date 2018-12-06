@@ -12,10 +12,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 // <-----------------------For creating a redflag record -------------------------------------------------------------------------------------------------------------->
 app.post('/api/v1/redflags', (req, res) => {
     const redflag = {
-        id:         db.length + 1,
-        title:      req.body.title,
-        details:    req.body.details
-    }
+        id:                 db.length + 1,
+        createdOn:          req.body.createdOn,
+        createdBy:          req.body.createdBy,
+        type:               req.body.type,
+        location:           req.body.location,
+        status:             req.body.status,
+        Images:             req.body.Images,
+        Videos:             req.body.Videos,
+        comment:            req.body.comment
+    };
     db.push(redflag);
     return res.status(201).send({
         status:     201,
@@ -49,7 +55,7 @@ app.get('/api/v1/redflags/:id', (req, res) => {
 
 // <-----------------------For editing a specific redflag record -------------------------------------------------------------------------------------------------------------->
 app.put('/api/v1/redflags/:id', (req, res) => {
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
     let redflagFound;
     let itemIndex;
     
@@ -67,36 +73,33 @@ app.put('/api/v1/redflags/:id', (req, res) => {
       });
     }
   
-    if (!req.body.title) {
-      return res.status(400).send({
-        status:     400,
-        error:      'title is required',
-      });
-    } else if (!req.body.details) {
-      return res.status(400).send({
-        status:     400,
-        data:       'details is required',
-      });
-    }
+
   
     const updatedRedflag = {
-      id: redflagFound.id,
-      title: req.body.title || redflagFound.title,
-      details: req.body.details || redflagFound.details,
+
+        id: redflagFound.id,
+        createdOn:          req.body.createdOn  || redflagFound.createdOn,
+        createdBy:          req.body.createdBy  || redflagFound.createdBy,
+        type:               req.body.type       || redflagFound.type,      
+        location:           req.body.location   || redflagFound.location,
+        status:             req.body.status     || redflagFound.status,
+        Images:             req.body.Images     || redflagFound.Images,
+        Videos:             req.body.Videos     || redflagFound.Videos,
+        comment:            req.body.comment    || redflagFound.comment
     };
   
     db.splice(itemIndex, 1, updatedRedflag);
   
     return res.status(201).send({
       status:   201,
-      data: 'redflag added successfully',
+      data: 'redflag updated successfully',
       updatedRedflag,
     });
 });
 
 // <-----------------------For deleting a specific redflag record -------------------------------------------------------------------------------------------------------------->
 app.delete('/api/v1/redflags/:id', (req, res) => {
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
 
     db.map((readflag, index) => {
         if (readflag.id === id){
